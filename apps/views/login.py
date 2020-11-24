@@ -1,7 +1,7 @@
 import sys
 from PySide2.QtWidgets import QWidget
 
-from templates.ui_login import Ui_Login
+from apps.templates.ui_login import Ui_Login
 
 
 class Login(QWidget, Ui_Login):
