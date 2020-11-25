@@ -41,9 +41,9 @@
     <widget class="QWidget" name="verticalLayoutWidget">
      <property name="geometry">
       <rect>
-       <x>-1</x>
+       <x>-11</x>
        <y>0</y>
-       <width>201</width>
+       <width>211</width>
        <height>531</height>
       </rect>
      </property>
@@ -139,6 +139,9 @@
          <height>451</height>
         </rect>
        </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
        <widget class="QWidget" name="tab">
         <attribute name="title">
          <string>Tab 1</string>
@@ -153,11 +156,6 @@
           </rect>
          </property>
         </widget>
-       </widget>
-       <widget class="QWidget" name="tab_2">
-        <attribute name="title">
-         <string>Tab 2</string>
-        </attribute>
        </widget>
       </widget>
      </widget>

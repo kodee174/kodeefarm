@@ -9,6 +9,6 @@ Base = declarative_base()
 Session = sessionmaker(bind=engine)
 session = Session()
 
-from apps.models.account import Account
+from apps.models.user import User
 
 Base.metadata.create_all(engine)

@@ -29,7 +29,7 @@ class Ui_Home(object):
         self.left_frame.setFrameShadow(QFrame.Raised)
         self.verticalLayoutWidget = QWidget(self.left_frame)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
-        self.verticalLayoutWidget.setGeometry(QRect(-1, 0, 201, 531))
+        self.verticalLayoutWidget.setGeometry(QRect(-11, 0, 211, 531))
         self.verticalLayout = QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -82,9 +82,6 @@ class Ui_Home(object):
         self.tableView.setObjectName(u"tableView")
         self.tableView.setGeometry(QRect(30, 30, 611, 401))
         self.tabWidget.addTab(self.tab, "")
-        self.tab_2 = QWidget()
-        self.tab_2.setObjectName(u"tab_2")
-        self.tabWidget.addTab(self.tab_2, "")
         self.stackedWidget.addWidget(self.page)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
@@ -117,6 +114,9 @@ class Ui_Home(object):
 
         self.retranslateUi(Home)
 
+        self.tabWidget.setCurrentIndex(0)
+
+
         QMetaObject.connectSlotsByName(Home)
     # setupUi
 
@@ -128,7 +128,6 @@ class Ui_Home(object):
         self.pushButton.setText(QCoreApplication.translate("Home", u"Qu\u1ea3n l\u00fd thi\u1ebft b\u1ecb", None))
         self.setting_btn.setText(QCoreApplication.translate("Home", u"C\u00e0i \u0111\u1eb7t", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("Home", u"Tab 1", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("Home", u"Tab 2", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_3), QCoreApplication.translate("Home", u"Tab 1", None))
         self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_4), QCoreApplication.translate("Home", u"Tab 2", None))
         self.label.setText(QCoreApplication.translate("Home", u"Kodee Team", None))
